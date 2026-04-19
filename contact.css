@@ -76,6 +76,14 @@ nav a:hover {
     padding-top: 13rem;
 }
 
+.eyebrow {
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
 /* LEFT */
 .contact-left h2 {
     font-size: 42px;
@@ -131,6 +139,7 @@ nav a:hover {
     .contact-container {
         grid-template-columns: 1fr;
         padding: 80px 20px;
+        padding-top: 9rem;
     }
 }
 
@@ -218,6 +227,11 @@ nav a:hover {
 /* RESPONSIVE */
 @media(max-width: 900px) {
 
+    nav {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
     .footer {
         padding: 60px 20px 30px;
     }
@@ -230,5 +244,20 @@ nav a:hover {
     .footer-bottom {
         flex-direction: column;
         gap: 10px;
+    }
+}
+
+@media (max-width: 760px) {
+    nav {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    nav ul {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }

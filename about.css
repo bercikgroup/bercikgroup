@@ -212,19 +212,9 @@ nav a:hover {
 }
 
 @media (max-width: 760px) {
-    nav {
-        flex-direction: column;
-        gap: 14px;
-    }
-
-    nav ul {
-        gap: 18px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 
     .about-page {
-        padding-top: 36px;
+        padding-top: 140px;
         padding-bottom: 72px;
     }
 
@@ -235,5 +225,20 @@ nav a:hover {
     .about-content p {
         font-size: 16px;
         line-height: 1.65;
+    }
+}
+
+@media (max-width: 760px) {
+    nav {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    nav ul {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }

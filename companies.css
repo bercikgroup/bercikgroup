@@ -63,6 +63,7 @@ nav a:hover {
 }
 
 .companies {
+    padding-top: 8rem;
 }
 
 .company-content {
@@ -238,6 +239,11 @@ nav a:hover {
 /* RESPONSIVE */
 @media(max-width: 900px) {
 
+    nav {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
     .footer {
         padding: 60px 20px 30px;
     }
@@ -250,6 +256,26 @@ nav a:hover {
     .footer-bottom {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .company-content {
+        padding: 50px 20px 40px;
+    }
+}
+
+
+@media (max-width: 760px) {
+    nav {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    nav ul {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
