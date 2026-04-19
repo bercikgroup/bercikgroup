@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #0a0a0a;
+    --surface: #101010;
+    --line: rgba(255, 255, 255, 0.1);
+    --line-soft: rgba(255, 255, 255, 0.06);
+    --text: #ece8e1;
+    --muted: #a9acab;
+    --soft: #6b6f6e;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0a0a0a;
+    color: var(--text);
+    letter-spacing: 0.1px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(3px);
+    z-index: 100;
+    transition: 0.3s;
+}
+
+nav:hover {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+}
+
+nav img {
+    height: 36px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 36px;
+}
+
+nav a {
+    color: var(--muted);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--text);
+}
+
+.companies {
+}
+
+.company-content {
+    padding: 50px 90px 40px;
+}
+
+.companies-kicker {
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.company-content h1 {
+    margin-bottom: 18px;
+    color: var(--accent);
+    font-size: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.company-list {
+    padding-top: 4rem;
+}
+
+.company-row {
+}
+
+.company-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.company-card {
+    transition: border-color 0.3s ease;
+    max-width: 360px;
+    height: 200px;
+    border: 1px solid var(--line);
+    text-decoration: none;
+}
+
+.company-card:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.company-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 35px 35px 0;
+    color: var(--text);
+}
+
+.company-card-content {
+    padding: 10px;
+    margin-top: 8px;
+}
+
+.company-card-content p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, rgb(123 123 123), rgb(133 133 133 / 79%) 68%, rgba(255, 255, 255, 0) 100%);    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.line-card {
+    width: 210px;
+    height: 1px;
+    background: linear-gradient(90deg, rgb(123 123 123), rgb(133 133 133 / 79%) 68%, rgba(255, 255, 255, 0) 100%);
+    margin-top: 28px;
+    margin-bottom: 15px;
+}
+
+.field {
+    margin-bottom: 18px;
+    color: var(--accent);
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: unset;
+}
+
+.footer {
+    margin-top: 120px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 80px 80px 40px;
+}
+
+/* TOP GRID */
+.footer-top {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 80px;
+    margin-bottom: 60px;
+}
+
+/* BRAND */
+.footer-brand img {
+    height: 36px;
+    margin-bottom: 20px;
+}
+
+.footer-brand p {
+    color: #888;
+    max-width: 400px;
+    line-height: 1.7;
+}
+
+/* SOCIAL */
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: #fff;
+}
+
+/* NAV */
+.footer-nav h4 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.footer-nav a {
+    display: block;
+    margin-bottom: 10px;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #fff;
+    transform: translateX(4px);
+}
+
+/* BOTTOM */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    padding-top: 20px;
+    font-size: 12px;
+    color: #555;
+    letter-spacing: 1px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+
+    .footer {
+        padding: 60px 20px 30px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
