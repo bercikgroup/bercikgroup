@@ -146,7 +146,8 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-.company-content h1 {
+.company-content h1,
+.company-content h2 {
     margin-bottom: 18px;
     color: var(--accent);
     font-size: 32px;
@@ -192,6 +193,19 @@ nav a:hover {
 .company-card:hover .pill {
     background: rgba(0, 0, 0, 0.1);
     color: black;
+}
+
+/* Cards with longer pill sets (e.g. Charts by BERCIK): let the pills wrap
+   instead of spilling past the edge, and let the card grow to fit. The fixed
+   width holds the desktop card size so the grid track doesn't collapse. */
+.company-card-wrap {
+    width: 360px;
+    height: auto;
+    min-height: 200px;
+}
+
+.company-card-wrap .what-we-do-pills {
+    flex-wrap: wrap;
 }
 
 
@@ -246,6 +260,16 @@ nav a:hover {
     width: auto;
 }
 
+/* wide wordmark logo on a white JPG — sit it in a clean rounded tile
+   so the white background reads as intentional on the dark card */
+.apify-logo {
+    width: 168px;
+    height: auto;
+    background: #ffffff;
+    padding: 10px 12px;
+    border-radius: 6px;
+}
+
 .line {
     width: 100%;
     height: 1px;
@@ -275,7 +299,8 @@ nav a:hover {
     padding: 50px 90px 40px;
 }
 
-.news-content h1 {
+.news-content h1,
+.news-content h2 {
     margin-bottom: 18px;
     color: var(--accent);
     font-size: 32px;
@@ -498,6 +523,25 @@ nav a:hover {
     .company-content {
         padding: 50px 20px 40px;
     }
+
+    /* stack company / project cards so they fit the screen */
+    .company-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .company-card {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        min-height: 180px;
+        padding-bottom: 18px;
+    }
+
+    /* let the pills wrap instead of overflowing the card */
+    .what-we-do-pills {
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -538,5 +582,11 @@ nav a:hover {
 
     section {
         padding-top: 88px;
+    }
+
+    .company-content h1,
+    .company-content h2 {
+        font-size: 26px;
+        letter-spacing: 2px;
     }
 }

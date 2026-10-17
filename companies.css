@@ -305,6 +305,25 @@ nav a:hover {
     .company-content {
         padding: 50px 20px 40px;
     }
+
+    /* stack company cards so they fit the screen */
+    .company-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .company-card {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        min-height: 180px;
+        padding-bottom: 18px;
+    }
+
+    /* let the pills wrap instead of overflowing the card */
+    .what-we-do-pills {
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -320,6 +339,16 @@ nav a:hover {
         gap: 18px;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    /* give the heading room below the taller stacked nav */
+    .companies {
+        padding-top: 9rem;
+    }
+
+    .company-content h1 {
+        font-size: 26px;
+        letter-spacing: 2px;
     }
 }
 

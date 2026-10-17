@@ -1,0 +1,71 @@
+/* ===========================================================
+   Custom cursor — dot + trailing ring
+   Only active on devices with a precise pointer (desktop).
+   Scoped to html.has-custom-cursor so the native cursor is
+   used as a fallback whenever the JS doesn't run.
+   =========================================================== */
+
+@media (hover: hover) and (pointer: fine) {
+
+    html.has-custom-cursor,
+    html.has-custom-cursor * {
+        cursor: none !important;
+    }
+
+    .cursor-dot,
+    .cursor-ring {
+        position: fixed;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: 9999;
+        border-radius: 50%;
+        opacity: 1;
+        transition: opacity 0.25s ease;
+        will-change: transform;
+    }
+
+    /* small solid dot — tracks the pointer exactly */
+    .cursor-dot {
+        width: 6px;
+        height: 6px;
+        background: #f2efe8;
+    }
+
+    /* larger outline ring — follows with a slight lag (eased in JS) */
+    .cursor-ring {
+        width: 34px;
+        height: 34px;
+        border: 1px solid rgba(242, 239, 232, 0.5);
+        transition: width 0.25s ease, height 0.25s ease,
+                    border-color 0.25s ease, background-color 0.25s ease,
+                    opacity 0.25s ease;
+    }
+
+    /* grow + subtle fill over links, cards and other interactive elements */
+    .cursor-ring.is-hover {
+        width: 54px;
+        height: 54px;
+        border-color: rgba(242, 239, 232, 0.9);
+        background: rgba(242, 239, 232, 0.08);
+    }
+
+    /* quick contract on click for feedback */
+    .cursor-ring.is-down {
+        width: 26px;
+        height: 26px;
+    }
+
+    /* hidden until the first move / when the pointer leaves the window */
+    .cursor-dot.is-hidden,
+    .cursor-ring.is-hidden {
+        opacity: 0;
+    }
+}
+
+/* respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .cursor-ring {
+        transition: opacity 0.25s ease;
+    }
+}

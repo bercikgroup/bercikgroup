@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://bercikgroup.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bercikgroup.com/"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://bercikgroup.com/images/og-image.png</image:loc>
+      <image:caption>BERCIK Group — private holding company</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bercikgroup.com/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bercikgroup.com/about.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bercikgroup.com/companies.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bercikgroup.com/companies.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bercikgroup.com/news.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bercikgroup.com/news.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bercikgroup.com/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bercikgroup.com/contact.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /save/
+Disallow: /save.html
+Disallow: /server.js
+Disallow: /package.json
+
+Sitemap: https://bercikgroup.com/sitemap.xml
