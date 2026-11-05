@@ -311,3 +311,9 @@ nav a:hover {
     }
 }
 
+
+/* social icon row */
+.footer-social {
+    display: flex;
+    gap: 16px;
+}

@@ -590,3 +590,9 @@ nav a:hover {
         letter-spacing: 2px;
     }
 }
+
+/* social icon row */
+.footer-social {
+    display: flex;
+    gap: 16px;
+}

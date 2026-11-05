@@ -85,7 +85,7 @@ nav a:hover {
 }
 
 /* LEFT */
-.contact-left h2 {
+.contact-left h1 {
     font-size: 42px;
     margin: 20px 0;
 }
@@ -260,4 +260,9 @@ nav a:hover {
         flex-wrap: wrap;
         justify-content: center;
     }
+}
+/* social icon row */
+.footer-social {
+    display: flex;
+    gap: 16px;
 }
